@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de financiamento</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <div id="container">
+        <form>
+            <div class="box">
+                <label for="price">Valor do carro:</label>
+                <input type="number" id="price" maxlength="7"value="">
+            </div>
+            <div class="box">
+                <label for="entry">Valor da entrada:</label>
+                <input type="number" id="entry" maxlength="7" value="">
+            </div>
+            <div class="box">
+                <label for="fees">Taxa de juros:</label>
+                <input type="number" id="fees" value="1.57">
+            </div>
+            <div class="box">
+                <label for="number">Número de parcelas:</label>
+                <input type="number" id="number" value="">
+            </div>
+            <div class="button">
+                <button id = "calcButton">CALCULAR</button>
+            </div>
+        </form>  
+    </div>
+
+    
+    <div id="results" class="none">
+        <form>
+            <div class="box">
+                <label for="parcela">Parcela: </label>
+                <input type="text" id="parcela" value="">
+            </div>
+            <div class="box">
+                <label for="total-price">Preço Total: </label>
+                <input type="text" id="totalPrice" value="">
+            </div>
+            <div class="box">
+                <label for="just-fees">Juros totais: </label>
+                <input type="text" id="justFees" value="">
+            </div>
+            <div class="box">
+                <label for="ipva">IPVA: </label>
+                <input type="text" id="ipva" value="">
+            </div>
+            <div class="button">
+                <button id = "backButton" >VOLTAR</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
