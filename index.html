@@ -9,26 +9,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
 </head>
-<body>
+<body id="main">
+
+    <div id="button-light">
+        <label class="switch">
+            <input type="checkbox" id="modeCheckBox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    
 
     <div id="container">
         <form>
             <div class="box">
                 <label for="price">Valor do carro:</label>
-                <input type="number" id="price" maxlength="7"value="">
+                <div>
+                    <span>R$</span>
+                    <input type="number" id="price" maxlength="7"value="0" autocomplete="off" placeholder="0,00" class="money">
+                </div>
             </div>
+
             <div class="box">
                 <label for="entry">Valor da entrada:</label>
-                <input type="number" id="entry" maxlength="7" value="">
+                <div>
+                    <span>R$</span>
+                    <input type="number" id="entry" maxlength="7" value="0" autocomplete="off" placeholder="0,00" class="money">
+                </div>
             </div>
+
             <div class="box">
                 <label for="fees">Taxa de juros:</label>
-                <input type="number" id="fees" value="1.57">
+                <div>
+                    <span>R$</span>
+                    <input type="number" id="fees" value="1.57" autocomplete="off" placeholder="0,00" class="money">
+                </div>
+                
             </div>
             <div class="box">
                 <label for="number">Número de parcelas:</label>
-                <input type="number" id="number" value="">
+                <div>
+                    <span>R$</span>
+                    <input type="number" id="number" autocomplete="off" placeholder="1" value="1" class="money">
+                </div>
             </div>
+
             <div class="button">
                 <button id = "calcButton">CALCULAR</button>
             </div>
@@ -40,20 +64,36 @@
         <form>
             <div class="box">
                 <label for="parcela">Parcela: </label>
-                <input type="text" id="parcela" value="">
+                <div>
+                    <span>R$</span>
+                    <input type="number" id="parcela" value="">
+                </div>
             </div>
+
             <div class="box">
                 <label for="total-price">Preço Total: </label>
-                <input type="text" id="totalPrice" value="">
+                <div>
+                    <span>R$</span>
+                    <input type="number" id="totalPrice" value="">
+                </div>
             </div>
+
             <div class="box">
                 <label for="just-fees">Juros totais: </label>
-                <input type="text" id="justFees" value="">
+                <div>
+                    <span>R$</span>
+                    <input type="number" id="justFees" value="">
+                </div>
             </div>
+
             <div class="box">
                 <label for="ipva">IPVA: </label>
-                <input type="text" id="ipva" value="">
+                <div>
+                    <span>R$</span>
+                    <input type="number" id="ipva" value="">
+                </div>
             </div>
+
             <div class="button">
                 <button id = "backButton" >VOLTAR</button>
             </div>
