@@ -30,22 +30,21 @@ backButton.addEventListener("click", (event) => {
 calcButton.addEventListener("click", (event) => {
     event.preventDefault()
 
-    if(document.getElementById("number").value <= 0){
-        alert("O número de parcelas deve ser maior que 0")
+    if(document.getElementById("number").value <= 1){
+        alert("O número de parcelas deve ser maior que 1")
     }else if(document.getElementById('price').value <= 0){
         alert("O preço do carro deve ser maior que 0")
     }
     else{
         results.classList.remove("none");
         container.classList.add("none");
+
+
     
         const  price = document.getElementById('price').value;
         const  entry = document.getElementById("entry").value;    
         const  fees = document.getElementById("fees").value;
         const  number = document.getElementById("number").value;
-    
-        
-        console.log(price);
     
             let parcela = 0;
             let totalPrice = 0;
