@@ -15,16 +15,37 @@
     align-items: center;
 }
 
-.darkTheme{
-    background-color: #222020;
+#container {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#container {
-    position: relative;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+form {   
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
+}
+
+.box {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box input[type="text"] {
+  max-width: 200px; 
+}
+
+/* Class Changers */
+.darkTheme{
+    background-color: #222020;
 }
 
 .none{
@@ -32,46 +53,26 @@
     transition-duration: 0.3;
 }
 
-form {   
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
-}
-
-.box {
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.box input[type="text"] {
-    max-width: 200px; 
-}
-
 /* Botões */
 
 #calcButton{
     font-weight: 900;
     background: floralwhite;
-	border-radius:24px;
-	border:1px solid #393d3a;
-	cursor:pointer;
-	color: #000000;
-	font-family:Arial;
-	font-size:12px;
-	padding:16px 26px;
-	text-decoration:none;
+	  border-radius:24px;
+	  border:1px solid #393d3a;
+	  cursor:pointer;
+	  color: #000000;
+	  font-family:Arial;
+	  font-size:12px;
+	  padding:16px 26px;
+	  text-decoration:none;
     transition-duration: 0.3s;
 }
 
 
 #calcButton:hover{
     color: #ffffff;
-	background-color:#000000;
+	  background-color:#000000;
 }
 
 #backButton{

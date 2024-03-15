@@ -41,14 +41,13 @@ calcButton.addEventListener("click", (event) => {
 
 
     
-        const  price = document.getElementById('price').value;
-        const  entry = document.getElementById("entry").value;    
-        const  fees = document.getElementById("fees").value;
-        const  number = document.getElementById("number").value;
-    
+        let  price = parseFloat(document.getElementById('price').value);
+        let  entry = parseFloat(document.getElementById("entry").value); 
+        let  fees = parseFloat(document.getElementById("fees").value);
+        let  number = parseFloat(document.getElementById("number").value);
+
             let parcela = 0;
             let totalPrice = 0;
-            let totalFees = 0;
             let ipva = 0;
     
             // getParcela
@@ -57,10 +56,10 @@ calcButton.addEventListener("click", (event) => {
             parcela = (price - entry) * (numerador/denominador);
     
             //getTotalPrice
-            totalPrice = parcela * number;
+            totalPrice = (parcela * number) + entry;
     
             //getJustFees
-            justFees = totalPrice - (price - entry);
+            justFees = totalPrice - (price);
     
             //getIPVA
             ipva = price * 0.04;
